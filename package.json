@@ -1,0 +1,21 @@
+{
+  "name": "hr-geo-attendance-system",
+  "version": "1.0.0",
+  "description": "HR Management and Geo-Attendance System",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-client": "cd client && npm install",
+    "install-server": "cd server && npm install",
+    "install": "npm run install-server && npm run install-client"
+  },
+  "keywords": ["hr", "attendance", "geolocation"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
